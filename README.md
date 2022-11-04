@@ -643,3 +643,67 @@ To https://github.com/Odile078/git-exercises.git
 branch 'ft/squashing' set up to track 'origin/ft/squashing'.
 PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises>
 ```
+
+## Bundle 5
+
+### Exercise 1
+
+```bash
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'git-copy/main'.
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git pull
+Already up to date.
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises>
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git add --all
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git commit -m "feat:renaming home page to index page"
+[main ed31cba] feat:renaming home page to index page
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename home.html => index.html (100%)
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-exercises> git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 255 bytes | 127.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Odile078/git-exercises.git
+   60dd812..ed31cba  main -> main
+branch 'main' set up to track 'origin/main'.
+```
+
+### Exercise 2
+
+```bash
+
+
+TheGym@DESKTOP-4BEVTIK MINGW64 ~/Documents/TheGym/gitExercises
+$ git clone https://github.com/Odile078/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (107/107), done.
+remote: Compressing objects: 100% (101/101), done.
+remote: Total 107 (delta 5), reused 104 (delta 4), pack-reused 0
+Receiving objects: 100% (107/107), 1.95 MiB | 7.00 KiB/s, done.
+Resolving deltas: 100% (5/5), done.
+
+TheGym@DESKTOP-4BEVTIK MINGW64 ~/Documents/TheGym/gitExercises
+$ cd git-cafe-exercise
+
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-cafe-exercise> git add index.html
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-cafe-exercise> git commit -m "feat: renaming the same title"
+
+[main 5a89985] feat: renaming the same title
+ 1 file changed, 399 insertions(+), 239 deletions(-)
+PS C:\Users\TheGym\Documents\TheGym\gitExercises\git-cafe-exercise> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.57 KiB | 535.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Odile078/git-cafe-exercise.git
+   d1d3f9c..5a89985  main -> main
+```
